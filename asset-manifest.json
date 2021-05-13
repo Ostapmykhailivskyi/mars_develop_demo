@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/mars_develop_demo/static/css/main.d8ea5711.chunk.css",
+    "main.js": "/mars_develop_demo/static/js/main.91bb3e00.chunk.js",
+    "main.js.map": "/mars_develop_demo/static/js/main.91bb3e00.chunk.js.map",
+    "runtime-main.js": "/mars_develop_demo/static/js/runtime-main.b1500e66.js",
+    "runtime-main.js.map": "/mars_develop_demo/static/js/runtime-main.b1500e66.js.map",
+    "static/js/2.3a9d147b.chunk.js": "/mars_develop_demo/static/js/2.3a9d147b.chunk.js",
+    "static/js/2.3a9d147b.chunk.js.map": "/mars_develop_demo/static/js/2.3a9d147b.chunk.js.map",
+    "index.html": "/mars_develop_demo/index.html",
+    "static/css/main.d8ea5711.chunk.css.map": "/mars_develop_demo/static/css/main.d8ea5711.chunk.css.map",
+    "static/js/2.3a9d147b.chunk.js.LICENSE.txt": "/mars_develop_demo/static/js/2.3a9d147b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1500e66.js",
+    "static/js/2.3a9d147b.chunk.js",
+    "static/css/main.d8ea5711.chunk.css",
+    "static/js/main.91bb3e00.chunk.js"
+  ]
+}
