@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
 import {Button} from "@material-ui/core";
+import {func, number} from "prop-types";
 
 const Pagination = ({switchPage, currentPage, totalPages}) => {
-  // console.log('currentPage', currentPage)
-  // console.log('totalPages', totalPages)
   return(
     <div className={"pageTurnButtons"}>
       <Button
@@ -23,7 +22,13 @@ const Pagination = ({switchPage, currentPage, totalPages}) => {
         Load more
       </Button>
     </div>
-  )
-}
+  );
+};
+
+Pagination.propTypes = {
+  switchPage: func,
+  currentPage: number,
+  totalPages: number,
+};
 
 export default Pagination;

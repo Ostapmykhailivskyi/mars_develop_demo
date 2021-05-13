@@ -1,7 +1,7 @@
-import {apiKey} from "./apiKeys";
+import {apiKey} from "../config";
 
 export const getDataFromNasa = async (url) => {
-  return await fetch('https://api.nasa.gov/mars-photos/api/v1/' + url + apiKey
+  return await fetch(`https://api.nasa.gov/mars-photos/api/v1/${url}api_key=${apiKey}`
   )
     .then(response => response.body)
     .then(rb => {
@@ -20,7 +20,7 @@ export const getDataFromNasa = async (url) => {
               // Get the data and send it to the browser via the controller
               controller.enqueue(value);
               push();
-            })
+            });
           }
 
           push();
@@ -31,6 +31,6 @@ export const getDataFromNasa = async (url) => {
       return new Response(stream, {headers: {"Content-Type": "text/html"}}).text();
     })
     .then(result => {
-      return (JSON.parse(result))
-    })
-}
+      return (JSON.parse(result));
+    });
+};

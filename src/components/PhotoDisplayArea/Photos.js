@@ -1,6 +1,6 @@
-import React from 'react'
-import {useCount} from "./context";
+import React from "react";
 import PhotoTemplate from "./PhotoTemplate";
+import {any} from "prop-types";
 
 const Photos = ({photos}) => {
   if (!photos.length) {
@@ -10,7 +10,7 @@ const Photos = ({photos}) => {
           Select Rover, Camera and Sol to browse photo from MARS
         </h1>
       </div>
-    )
+    );
   }
 
   return(
@@ -21,12 +21,13 @@ const Photos = ({photos}) => {
           alt={obj.id}
           src={obj.img_src}
         />
-        // <h4>
-        //   {obj.id}
-        // </h4>
       )}
     </div>
-  )
-}
+  );
+};
+
+Photos.propTypes = {
+  photos: any
+};
 
 export default Photos;

@@ -1,11 +1,9 @@
-#root {
-  min-height: 100vh;
+#root{
+  min-height: 100vh
 }
-
-h1 {
+h1{
   margin: auto;
 }
-
 .App {
   display: flex;
   flex-direction: column;
@@ -13,29 +11,24 @@ h1 {
   text-align: center;
   min-height: 100vh;
 }
-
-label {
+label{
   color: white;
 }
-
-footer {
+footer{
   bottom: 0;
 }
-
-.Dropdowns {
+.Dropdowns{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 10px;
 }
-
-.customDropdown {
+.customDropdown{
   width: 120px;
   text-align: start;
 }
-
-.PhotosList {
+.PhotosList{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -43,13 +36,12 @@ footer {
   align-items: center;
 }
 
-.PhotoWrapper {
+.PhotoWrapper{
   min-width: 320px;
   margin: 30px auto auto;
   width: 40%;
 }
-
-.pageTurnButtons {
+.pageTurnButtons{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -59,15 +51,13 @@ footer {
   width: 360px;
   margin-bottom: 15px;
 }
-
-.emptyListTitle {
+.emptyListTitle{
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   flex-grow: 100;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-header {
     background-image: url("https://www.timeoutdubai.com/public/images/2021/02/11/mars_1.jpg");
@@ -81,5 +71,3 @@ footer {
     color: white;
   }
 }
-
-/*# sourceMappingURL=App.css.map */
