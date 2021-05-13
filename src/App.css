@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+#root{
   min-height: 100vh;
+}
+h1{
+  margin: auto;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  min-height: 100vh;
+}
+label{
+  color: white;
+}
+footer{
+  bottom: 0;
+}
+.Dropdowns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.customDropdown{
+  width: 120px;
+  text-align: start;
+}
+.PhotosList{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+.PhotoWrapper{
+  min-width: 320px;
+  margin: auto;
+  margin-top: 30px;
+  width: 40%;
+}
+.pageTurnButtons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  bottom: 0;
+  right: 0;
+  float: right;
+  width: 360px;
+  margin-bottom: 15px;
+}
+.emptyListTitle{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  text-align: center;
 
-.App-link {
-  color: #61dafb;
+  flex-grow: 100;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (prefers-reduced-motion: no-preference) {
+  .App-header {
+    background-image: url("https://www.timeoutdubai.com/public/images/2021/02/11/mars_1.jpg");
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: calc(10px + 2vmin);
+    color: white;
   }
 }

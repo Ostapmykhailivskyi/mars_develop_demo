@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {MarsProvider} from "./components/context";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MarsProvider>
+      <App/>
+    </MarsProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
